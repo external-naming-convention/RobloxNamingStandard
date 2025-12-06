@@ -131,6 +131,12 @@ Result: %u%% success rate (%u/%u)
 	res = res.Body
 	setclipboard("https://cloned.creditcard/view/"..res)
 	print("Copied result to clipboard!")
+	print([[THIS MESSAGE IS SPONSORED BY SENS, THE CCP, AND SUNC
+STOP USING THIS TRASH IN 2025, I WAS JUST BORED AND WANTED TO ADD SOME SLIGHTLY HELPFUL FUNCTIONS
+DO NOT HARASS MY NEW ACCOUNT, IM SURE SOME OF YOU HAVE FOUND IT ALREADY
+I KNEW MY FUNCTIONS SUCKED BACK THEN, I ALWAYS KNEW, BUT NO ONE HAD ANY SUGGESTIONS FOR ME, SO ITS KINDA UR FAULT TOO!!!!!
+LOVE U SENSE MWAAAAAAAAAH
+THIS MESSAGE IS SPONSORED BY SENS, THE CCP, AND SUNC]])
 end)
 
 -- Cache
@@ -830,7 +836,7 @@ test("gethwid", {}, function()
 	local same = false
 	task.spawn(coroutine.wrap(function()same=(gethwid()==hwid)end))
 	assert(same, "Did not return a consistent value")
-	assert(hwid, "Did not return a valid HWID")
+	assert(hwid, "Did not return a HWID")
 	assert(hwid ~= game:GetService("RbxAnalyticsService"):GetClientId(), "Did not return a valid HWID") -- could've at least hashed it for free points vro
 end)
 

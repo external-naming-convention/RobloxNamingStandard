@@ -127,7 +127,7 @@ Result: %u%% success rate (%u/%u)
 ## ✅ Passed%s
 ## ⛔ Failed%s
 ## ⚠️ Missing Alias%s]]):format(_version, n, v, rate, passes, passes + fails, pstr, fstr, ustr)
-	local res = request({Url = "https://cloned.creditcard/data", Method = "POST", Body = data, Headers = {["Content-Type"] = "text/plain"}})
+	local res = http_request({Url = "https://cloned.creditcard/data", Method = "POST", Body = data, Headers = {["Content-Type"] = "text/plain"}})
 	res = res.Body
 	setclipboard("https://cloned.creditcard/view/"..res)
 	print("Copied result to clipboard!")
@@ -136,8 +136,7 @@ STOP USING THIS TRASH IN 2025, I WAS JUST BORED AND WANTED TO ADD SOME SLIGHTLY 
 DO NOT HARASS MY NEW ACCOUNT, IM SURE SOME OF YOU HAVE FOUND IT ALREADY
 I KNEW MY FUNCTIONS SUCKED BACK THEN, I ALWAYS KNEW, BUT NO ONE HAD ANY SUGGESTIONS FOR ME, SO ITS KINDA UR FAULT TOO!!!!!
 LOVE U SENSE MWAAAAAAAAAH
-THIS MESSAGE IS SPONSORED BY SENS, THE CCP, AND SUNC
-(psst, the backend is still up!!)]])
+THIS MESSAGE IS SPONSORED BY SENS, THE CCP, AND SUNC]])
 end)
 
 -- Cache
@@ -974,3 +973,4 @@ test("WebSocket.connect", {}, function()
 	end
 	ws:Close()
 end)
+
